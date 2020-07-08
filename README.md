@@ -1,2 +1,3 @@
-# MagicSwiftHelpers
-Scalable helpers library  for Swift
+# MagicHelpers
+
+A description of this package.

@@ -2,7 +2,7 @@
 #if !os(macOS)
 import UIKit
 
-public struct ReplaceSegue: UIStoryboardSegue {
+public class ReplaceSegue: UIStoryboardSegue {
     
     override func perform() {
         if let delegate = UIApplication.shared.delegate, let rWindow = delegate.window, let inWindow = rWindow {

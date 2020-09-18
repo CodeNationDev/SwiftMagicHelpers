@@ -1,7 +1,7 @@
 //
 import Foundation
 
-public extension HelperManager {
+extension HelperManager {
     public struct JSON {
         public static func utils_json_decode<T: Codable>(_ json: String, type: T.Type) throws -> T {
             

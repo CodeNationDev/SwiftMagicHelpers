@@ -1,8 +1,8 @@
 //
 import Foundation
 
-extension HelperManager {
-    struct JSON {
+public extension HelperManager {
+    public struct JSON {
         public static func utils_json_decode<T: Codable>(_ json: String, type: T.Type) throws -> T {
             
             guard let data = json.data(using: .utf8) else {

@@ -4,7 +4,6 @@ import Foundation
 extension HelperManager {
     public struct JSON {
         public static func jsonDecode<T: Codable>(_ json: String, type: T.Type) throws -> T {
-            
             guard let data = json.data(using: .utf8) else {
                 throw NSError(domain: "Unable to parse action", code: 1, userInfo: nil)
             }

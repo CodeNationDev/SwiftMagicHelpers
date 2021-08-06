@@ -12,6 +12,7 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "SwiftMagicHelpers",
+            type: .dynamic ,
             targets: ["SwiftMagicHelpers"]),
     ],
     dependencies: [
@@ -23,6 +24,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "SwiftMagicHelpers",
-            dependencies: [])
+            dependencies: []),
+        .testTarget(name: "SwiftMagicHelpersTests",
+                    dependencies: ["SwiftMagicHelpers"])
     ]
 )
